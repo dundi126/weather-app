@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+		<title>Weather App T1</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<div id="info-modal" class="modal">
+			<div class="modal-content">
+				<h2>About PM Accelerator</h2>
+				<p>
+					Product Manager Accelerator is a program that helps professionals
+					transition into Product Management through hands-on training and
+					mentorship.
+				</p>
+				<a
+					href="https://www.linkedin.com/school/pmaccelerator/"
+					target="_blank">
+					<button class="learn-more-btn">Learn More !</button>
+				</a>
+			</div>
+			<a href="https://dundi-portfolio.vercel.app/" target="_blank">
+				<p>Weather App by <strong>Dund Vignesh Gutti</strong></p>
+			</a>
+		</div>
+		<div class="card">
+			<div class="search">
+				<input type="text" placeholder="search" spellcheck="false" />
+				<button><i class="fa-solid fa-magnifying-glass fa-xl"></i></button>
+			</div>
+			<div class="weather">
+				<img src="assets/rain.svg" class="weather-icon" />
+				<h1 class="temp">22&degC</h1>
+				<h2 class="city">New York</h2>
+				<div class="details">
+					<div class="col">
+						<img src="assets/humidity.svg" class="humidity-img" />
+						<div>
+							<p class="humidity">50%</p>
+							<p>Humidity</p>
+						</div>
+					</div>
+					<div class="col">
+						<img src="assets/wind.svg" class="wind-img" />
+						<div>
+							<p class="wind">15km/h</p>
+							<p>Wind Speed</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="forecast-items-container">
+				<div class="forecast-item">
+					<h5 class="forecast-item-date regular-txt">05 Aug</h5>
+					<img src="assets/thunderstorm.svg" class="forecast-item-img" />
+					<h5 class="forecast-item-temp">29 °C</h5>
+				</div>
+				<div class="forecast-item">
+					<h5 class="forecast-item-date regular-txt">05 Aug</h5>
+					<img src="assets/thunderstorm.svg" class="forecast-item-img" />
+					<h5 class="forecast-item-temp">29 °C</h5>
+				</div>
+				<div class="forecast-item">
+					<h5 class="forecast-item-date regular-txt">05 Aug</h5>
+					<img src="assets/thunderstorm.svg" class="forecast-item-img" />
+					<h5 class="forecast-item-temp">29 °C</h5>
+				</div>
+				<div class="forecast-item">
+					<h5 class="forecast-item-date regular-txt">05 Aug</h5>
+					<img src="assets/thunderstorm.svg" class="forecast-item-img" />
+					<h5 class="forecast-item-temp">29 °C</h5>
+				</div>
+				<div class="forecast-item">
+					<h5 class="forecast-item-date regular-txt">05 Aug</h5>
+					<img src="assets/thunderstorm.svg" class="forecast-item-img" />
+					<h5 class="forecast-item-temp">29 °C</h5>
+				</div>
+			</div>
+		</div>
+
+		<script src="./script.js"></script>
+	</body>
+</html>

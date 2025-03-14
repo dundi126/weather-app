@@ -1,0 +1,162 @@
+* {
+	padding: 0%;
+	margin: 0%;
+	box-sizing: border-box;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+	width: 100%;
+	height: auto;
+	background-color: rgb(81, 81, 81);
+	display: flex;
+	align-items: center;
+}
+
+#info-modal {
+	width: 40%;
+	margin: 0px 40px;
+}
+
+.modal-content {
+	color: aliceblue;
+	text-align: center;
+	line-height: 2;
+}
+
+.learn-more-btn {
+	padding: 5px;
+	border: #f3f4f4 solid 1px;
+	border-radius: 3px;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+
+.learn-more-btn:hover {
+	background: rgb(137, 188, 182);
+	border: #899cb1;
+}
+
+#info-modal a {
+	text-align: center;
+	color: aliceblue;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#info-modal a p strong {
+	text-decoration: underline;
+}
+
+.card {
+	width: 35%;
+	height: 75%;
+	background: linear-gradient(190deg, rgb(48, 98, 90), rgb(71, 165, 205));
+	color: black;
+	border-radius: 25px;
+	margin: 20px auto;
+	padding: 40px 35px;
+	text-align: center;
+	color: aliceblue;
+}
+
+.search {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.search input {
+	border: 0;
+	outline: 0;
+	padding: 10px;
+	height: 40px;
+	border-radius: 5px;
+	flex: 1;
+	font-size: large;
+	margin-right: 20px;
+}
+
+.search button {
+	border: 0;
+	border-radius: 25%;
+	background: white;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+}
+
+.weather-icon {
+	width: 150px;
+	height: 150px;
+	margin-top: 30px;
+}
+
+.weather h1 {
+	font-size: 80px;
+	font-weight: 500;
+}
+
+.weather h1 {
+	font-size: 40px;
+	font-weight: 400;
+	margin-top: -10px;
+}
+
+.details {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 20px;
+	margin-top: 20px;
+}
+
+.humidity-img,
+.wind-img {
+	width: 65px;
+}
+
+.forecast-items-container {
+	display: flex;
+	gap: 15px;
+	padding: 18px 0;
+	overflow-x: auto; /* ✅ Allows horizontal scrolling */
+	white-space: nowrap; /* ✅ Prevents items from wrapping to new lines */
+	scroll-behavior: smooth; /* ✅ Adds smooth scrolling effect */
+	max-width: 100%; /* ✅ Prevents breaking on smaller screens */
+}
+
+/* ✅ Styling for the scrollbar */
+.forecast-items-container::-webkit-scrollbar {
+	height: 8px; /* ✅ Adjust scrollbar height */
+}
+
+.forecast-items-container::-webkit-scrollbar-track {
+	background: rgb(0, 0, 0, 0.1);
+	border-radius: 99px;
+}
+
+.forecast-items-container::-webkit-scrollbar-thumb {
+	background: rgb(0, 0, 0, 0.3);
+	border-radius: 99px;
+}
+
+.forecast-item {
+	min-width: 80px;
+	background: rgb(255, 255, 255, 0.1);
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	padding: 10px;
+	align-items: center;
+	border-radius: 12px;
+	transition: 0.3s background;
+}
+.forecast-item:hover {
+	background: rgb(255, 255, 255, 0.15);
+}
+.forecast-item-img {
+	width: 35px;
+	height: 35px;
+}
