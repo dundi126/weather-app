@@ -59,7 +59,7 @@ async function checkWeather(city) {
 		Thunderstorm: "assets/thunderstorm.svg",
 		Atmosphere: "assets/atmosphere.svg",
 	};
-	weatherIcon.src = weatherIcons[weatherCondition] || "assets/default.svg"; // Default icon if not found
+	weatherIcon.src = weatherIcons[weatherCondition] || "assets/clear.svg"; // Default icon if not found
 
 	await updateForecastsInfo(city);
 }
@@ -123,7 +123,7 @@ function getWeatherIcon(id) {
 	if (id >= 700 && id < 800) return "assets/atmosphere.svg";
 	if (id === 800) return "assets/clear.svg";
 	if (id > 800) return "assets/clouds.svg";
-	return "assets/default.svg";
+	return "assets/clear.svg";
 }
 
 searchbtn.addEventListener("click", () => {
